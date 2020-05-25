@@ -1,0 +1,16 @@
+.vistas{
+    width: 100%;
+    height: 40px;
+    background-color:#60AEBF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vista{
+    
+    width: 50%;
+    text-align: center;
+}
+
+
