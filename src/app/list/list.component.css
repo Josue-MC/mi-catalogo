@@ -1,0 +1,16 @@
+.item{
+    background-color: #F2F2F2;
+    margin: 2em 10em 1.5em 10em;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23) ;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fas,fa-info-circle{
+    
+   font-size: 2em; 
+   color: #34435E;
+}
+
