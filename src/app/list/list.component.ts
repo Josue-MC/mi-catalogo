@@ -8,13 +8,7 @@ import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
   selector: 'app-list',
   templateUrl: './list.component.html',
   styleUrls: ['./list.component.css'],
-  styles: [`
-  .modal-list .modal-content {
-    background-color: #34435E !important;
-    color: white;
-    }
   
-  `]
 })
 export class ListComponent implements OnInit {
   autos: Automovil[];
