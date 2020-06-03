@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Automovil } from '../models';
+import { AUTOMOVILES } from '../data';
 
 @Component({
   selector: 'app-table',
@@ -6,10 +8,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./table.component.css']
 })
 export class TableComponent implements OnInit {
+  autos: Automovil[];
+  autoSeleccionado: Automovil;
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(){
+    this.autos = AUTOMOVILES;
+  }
+
+  onSelect(auto: Automovil){
+    this.autoSeleccionado = auto;
   }
 
 }
