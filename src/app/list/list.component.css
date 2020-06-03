@@ -14,3 +14,12 @@
    color: #34435E;
 }
 
+.modal-list .modal-content {
+    background-color: #34435E !important;
+    color: white;
+}
+
+.modal-list .close {
+    color: white;
+}
+

@@ -13,6 +13,17 @@
     
     width: 50%;
     text-align: center;
+    
+}
+
+.active{
+    color: #34435E !important;
+    font-weight:bold;
+}
+
+.nav1{
+    color:#676767;
+    text-decoration: none;
 }
 
 
