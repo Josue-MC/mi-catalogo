@@ -17,8 +17,6 @@ export class TableComponent implements OnInit {
     this.autos = AUTOMOVILES;
   }
 
-  onSelect(auto: Automovil){
-    this.autoSeleccionado = auto;
-  }
+  
 
 }
