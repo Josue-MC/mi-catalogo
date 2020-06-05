@@ -1,7 +1,7 @@
 import { Automovil } from './models';
 
 export const AUTOMOVILES: Automovil[] = [
-    {
+    /* {
         marca: 'Toyota',
         submarca: 'Corolla',
         modelo: 2010,
@@ -35,6 +35,6 @@ export const AUTOMOVILES: Automovil[] = [
         modelo: 2010,
         descripcion: 'Honda City 5 Puertas Automático Asientos Piel',
         fecha_registro: new Date('2020-03-15')
-    }
+    } */
 
 ]

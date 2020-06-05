@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Automovil } from '../models';
-import { AUTOMOVILES } from '../data';
 import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
+import { AutosService } from '../autos.service';
 
 
 @Component({
@@ -15,7 +15,7 @@ export class ListComponent implements OnInit {
   autoSeleccionado: Automovil;
   closeResult = '';
   
-  constructor(private modalService: NgbModal) { }
+  constructor(private modalService: NgbModal, private autoService: AutosService) { }
 
   open(content) {
     this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title', centered: true, windowClass: 'modal-list' }).result.then((result) => {
@@ -37,7 +37,10 @@ export class ListComponent implements OnInit {
   
 
   ngOnInit(){
-    this.autos = AUTOMOVILES;
+    this.autoService.getAutos().subscribe((response)=>{
+      this.autos = response.data;
+
+    })
   }
 
   onSelect(auto: Automovil){
