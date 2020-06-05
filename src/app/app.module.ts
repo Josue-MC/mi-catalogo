@@ -11,6 +11,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TableComponent } from './table/table.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PageNotFoundComponentComponent } from './page-not-found-component/page-not-found-component.component';
+import { ModalAddUpdateComponent } from './modal-add-update/modal-add-update.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { PageNotFoundComponentComponent } from './page-not-found-component/page-
     VistasComponent,
     ListComponent,
     TableComponent,
-    PageNotFoundComponentComponent
+    PageNotFoundComponentComponent,
+    ModalAddUpdateComponent
   ],
   imports: [
     BrowserModule,
@@ -29,6 +31,7 @@ import { PageNotFoundComponentComponent } from './page-not-found-component/page-
 
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [ModalAddUpdateComponent]
 })
 export class AppModule { }
