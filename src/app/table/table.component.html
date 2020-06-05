@@ -11,7 +11,7 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor='let auto of autos'>
+        <tr *ngFor='let auto of autos | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize'>
             <td>
 
             </td>
@@ -31,3 +31,9 @@
         
     </tbody>
 </table>
+
+<ngb-pagination
+ [collectionSize]="autos.length"
+ [(page)]="page"
+ [pageSize]="pageSize"
+ aria-label="Default pagination" ></ngb-pagination>

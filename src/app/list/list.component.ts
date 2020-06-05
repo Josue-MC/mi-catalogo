@@ -14,6 +14,8 @@ export class ListComponent implements OnInit {
   autos: Automovil[];
   autoSeleccionado: Automovil;
   closeResult = '';
+  pageSize: number;
+  page: number;
   
   constructor(private modalService: NgbModal, private autoService: AutosService) { }
 
@@ -37,6 +39,8 @@ export class ListComponent implements OnInit {
   
 
   ngOnInit(){
+    this.page = 1;
+    this.pageSize = 10;
     this.autoService.getAutos().subscribe((response)=>{
       this.autos = response.data;
 

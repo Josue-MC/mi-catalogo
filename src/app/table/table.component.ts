@@ -10,10 +10,15 @@ import { AutosService } from '../autos.service';
 export class TableComponent implements OnInit {
   autos: Automovil[];
   autoSeleccionado: Automovil;
+  pageSize: number;
+  page: number;
+
 
   constructor(private autoService: AutosService) { }
 
   ngOnInit(){
+    this.page = 1;
+    this.pageSize = 10;
     this.autoService.getAutos().subscribe((response)=>{
       this.autos = response.data;
     })
