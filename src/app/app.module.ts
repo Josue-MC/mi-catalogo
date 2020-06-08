@@ -12,6 +12,8 @@ import { TableComponent } from './table/table.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PageNotFoundComponentComponent } from './page-not-found-component/page-not-found-component.component';
 import { ModalAddUpdateComponent } from './modal-add-update/modal-add-update.component';
+import { FormsModule } from '@angular/forms';
+import { ModalConfirmarEliminarComponent } from './modal-confirmar-eliminar/modal-confirmar-eliminar.component';
 
 @NgModule({
   declarations: [
@@ -21,13 +23,15 @@ import { ModalAddUpdateComponent } from './modal-add-update/modal-add-update.com
     ListComponent,
     TableComponent,
     PageNotFoundComponentComponent,
-    ModalAddUpdateComponent
+    ModalAddUpdateComponent,
+    ModalConfirmarEliminarComponent
   ],
   imports: [
     BrowserModule,
     NgbModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
 
   ],
   providers: [],

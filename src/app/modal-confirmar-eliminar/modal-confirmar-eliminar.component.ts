@@ -2,21 +2,18 @@ import { Component, OnInit } from '@angular/core';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { Automovil } from 'src/app/models';
 
-
 @Component({
-  selector: 'app-modal-add-update',
-  templateUrl: './modal-add-update.component.html',
-  styleUrls: ['./modal-add-update.component.css']
+  selector: 'app-modal-confirmar-eliminar',
+  templateUrl: './modal-confirmar-eliminar.component.html',
+  styleUrls: ['./modal-confirmar-eliminar.component.css']
 })
-export class ModalAddUpdateComponent implements OnInit{
+export class ModalConfirmarEliminarComponent implements OnInit {
 
-  accion: string;
   auto: Automovil = {} as Automovil;
 
   constructor(public activeModal: NgbActiveModal) { }
 
- ngOnInit() {
-
- }
+  ngOnInit() {
+  }
 
 }

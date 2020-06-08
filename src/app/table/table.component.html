@@ -1,5 +1,5 @@
 <br>
-<br>
+<button type="button" class="btn btn-dark" (click)="openModalAdd()">Agregar <i class="fa fa-plus"></i></button>
 <table class="table table-striped">
     <thead>
         <tr>
@@ -14,9 +14,7 @@
     </thead>
     <tbody>
         <tr *ngFor='let auto of autos | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize'>
-            <td>
-
-            </td>
+            <th scope="row">{{auto._id}}</th>
             <td>
                 {{auto.marca}}
             </td>
@@ -30,7 +28,7 @@
                 <i class="fas fa-edit"></i>
             </td>
             <td>
-                <i class="fas fa-trash"></i>
+                <i class="fas fa-trash" (click)="OpenModalEliminar(auto)"></i>
             </td>
         </tr>
         
