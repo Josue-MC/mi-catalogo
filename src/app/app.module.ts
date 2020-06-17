@@ -14,6 +14,8 @@ import { PageNotFoundComponentComponent } from './page-not-found-component/page-
 import { ModalAddUpdateComponent } from './modal-add-update/modal-add-update.component';
 import { FormsModule } from '@angular/forms';
 import { ModalConfirmarEliminarComponent } from './modal-confirmar-eliminar/modal-confirmar-eliminar.component';
+import { ForbiddenNameDirective } from './directives/forbidden-name.directive';
+import { FormatoModelosPipe } from './pipes/formato-modelos.pipe';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { ModalConfirmarEliminarComponent } from './modal-confirmar-eliminar/moda
     TableComponent,
     PageNotFoundComponentComponent,
     ModalAddUpdateComponent,
-    ModalConfirmarEliminarComponent
+    ModalConfirmarEliminarComponent,
+    ForbiddenNameDirective,
+    FormatoModelosPipe
   ],
   imports: [
     BrowserModule,
