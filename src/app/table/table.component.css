@@ -1,0 +1,17 @@
+
+.btnAgregar{
+    margin-top: 2em;
+    margin-left: 1em;
+    margin-bottom: 1.3em;
+    background-color: #34435E !important;
+}
+
+.table{
+    background-color: #F2F2F2;
+    font-size: 0.9em;
+}
+
+.fas, .fa-edit{
+color: #34435E;
+}
+

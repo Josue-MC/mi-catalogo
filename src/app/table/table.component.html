@@ -1,6 +1,7 @@
-<br>
-<button type="button" class="btn btn-dark" (click)="openModalAdd()">Agregar <i class="fa fa-plus"></i></button>
-<table class="table table-striped">
+
+<button type="button" class="btnAgregar btn btn-dark" (click)="openModalAdd()">Agregar <i class="fa fa-plus"></i></button>
+
+<table class=" tablem table table-striped">
     <thead>
         <tr>
             <th scope="col">Id</th>
@@ -14,6 +15,12 @@
         </tr>
     </thead>
     <tbody>
+        <tr *ngIf="displayProgressBar">
+            <th colspan="7">
+                <ngb-progressbar type="dark" [value]="100" [striped]=true [animated]=true></ngb-progressbar>
+            </th>
+        </tr>
+
         <tr *ngFor='let auto of autos | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize'>
             <th scope="row">{{auto._id}}</th>
             <td>

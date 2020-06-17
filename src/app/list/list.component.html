@@ -1,3 +1,6 @@
+  <p *ngIf="displayProgressBar">
+    <ngb-progressbar type="secondary" [value]="100" [animated]=true [striped]=true ></ngb-progressbar>
+  </p>
 <ng-container *ngFor='let auto of autos | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize'>
 <div class="item">
     <div id="info" ><i class="fas fa-info-circle" (click)="onSelect(auto)" (click)="open(content)"></i></div>
